@@ -1,0 +1,62 @@
+/* src/HomePage.css */
+
+.homepage {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .homepage-header {
+    background-color: #282c34;
+    padding: 20px 25px;
+    color: white;
+  }
+  
+  .homepage-header nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .homepage-header nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  .homepage-header nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .homepage-main {
+    padding: 20px;
+  }
+  
+  .intro, .features {
+    margin: 20px 0;
+  }
+  
+  .features ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .features ul li {
+    background-color: #f0f0f0;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .homepage-footer {
+    background-color: #282c34;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
