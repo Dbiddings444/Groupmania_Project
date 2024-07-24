@@ -2,7 +2,7 @@
 
 import React from 'react';
 import './HomePage.css'; // Import the CSS file for styling
-import headerLogo from './assets/icon-left-font-monochrome-white.png'
+import headerLogo from '../assets/icon-left-font-monochrome-white.png'
 const HomePage = () => {
   return (
     <div className="homepage">
