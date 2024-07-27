@@ -3,9 +3,10 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './LoginPage.css';
-
+import loginPic from '../assets/ayrus-hill-qiuk_20KbKM-unsplash.jpg';
+import loginIcon from '../assets/icon-above-font.png'
 const LoginPage = () => {
-  const [isLogin, setIsLogin] = useState(true);
+  const [activeTab, setActiveTab] = useState('login');
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
@@ -26,95 +27,127 @@ const LoginPage = () => {
     // Add your back-end user creation code here
     if (password === confirmPassword) {
       alert('User created successfully');
-      setIsLogin(true);
+      setActiveTab('login');
     } else {
       alert('Passwords do not match');
     }
   };
 
-  const toggleForm = () => {
-    setIsLogin(!isLogin);
-    setUsername('');
-    setPassword('');
-    setConfirmPassword('');
-  };
-
   return (
     <div className="login-page">
-      <div className="login-box">
-        {isLogin ? (
-          <>
-            <h2>User Login</h2>
-            <p className='details'>Hey, Enter your details to sign into your account</p>
-            <form onSubmit={handleLogin}>
-              <div className="input-group">
-                <label htmlFor="username">Username</label>
-                <input
-                  type="text"
-                  id="username"
-                  defaultValue={"UserName"}
-                  value={username}
-                  onChange={(e) => setUsername(e.target.value)}
-                  required
-                />
-              </div>
-              <div className="input-group">
-                <label htmlFor="password">Password</label>
-                <input
-                  type="password"
-                  id="password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  required
-                />
-              </div>
-              <button type="submit">Login</button>
-            </form>
-            <p>
-              Don't have an account? <span className='details_link' onClick={toggleForm}>Sign Up</span>
-            </p>
-          </>
-        ) : (
-          <>
-            <h2>Sign Up</h2>
-            <form onSubmit={handleSignup}>
-              <div className="input-group">
-                <label htmlFor="username">Username</label>
-                <input
-                  type="text"
-                  id="username"
-                  value={username}
-                  onChange={(e) => setUsername(e.target.value)}
-                  required
-                />
-              </div>
-              <div className="input-group">
-                <label htmlFor="password">Password</label>
-                <input
-                  type="password"
-                  id="password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  required
-                />
-              </div>
-              <div className="input-group">
-                <label htmlFor="confirmPassword">Confirm Password</label>
-                <input
-                  type="password"
-                  id="confirmPassword"
-                  value={confirmPassword}
-                  onChange={(e) => setConfirmPassword(e.target.value)}
-                  required
-                />
-              </div>
-              <button type="submit">Sign Up</button>
-            </form>
-            <p>
-              Already have an account? <span className='details_link'  onClick={toggleForm}>Login</span>
-            </p>
-          </>
-        )}
+      
+      <div className="login-container">
+        <div className="login-box">
+        <img className='logo' alt='company logo for login'src={loginIcon}></img>
+          {activeTab === 'login' && (
+            <>
+              <h2>Welcome Back</h2>
+              <p className='welcomeMessage'>Welcome Back, Please enter your details</p>
+              <div className="tabs">
+            <button
+              className={activeTab === 'login' ? 'active' : ''}
+              id='left'
+              onClick={() => setActiveTab('login')}
+            >
+              Login
+            </button>
+            <button
+              className={activeTab === 'signup' ? 'active' : ''}
+              id='right'
+              onClick={() => setActiveTab('signup')}
+            >
+              Sign Up
+            </button>
+          </div>
+              <form onSubmit={handleLogin}>
+                <div className="input-group">
+                  {/* <label htmlFor="username">Username</label> */}
+                  <input
+                    type="text"
+                    id="username"
+                    placeholder='Username'
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
+                    required
+                  />
+                </div>
+                <div className="input-group">
+                  {/* <label htmlFor="password">Password</label> */}
+                  <input
+                    type="password"
+                    id="password"
+                    placeholder='Password'
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    required
+                  />
+                </div>
+                <button type="submit" className='submit'>Login</button>
+              </form>
+            </>
+          )}
+          {activeTab === 'signup' && (
+            <>
+              <h2>Sign Up</h2>
+              <p className='welcomeMessage'>So excited for you to join us, enter your info below</p>
+              <div className="tabs">
+            <button
+              className={activeTab === 'login' ? 'active' : ''}
+              id='left'
+              onClick={() => setActiveTab('login')}
+            >
+              Login
+            </button>
+            <button
+              className={activeTab === 'signup' ? 'active' : ''}
+              id='right'
+              onClick={() => setActiveTab('signup')}
+            >
+              Sign Up
+            </button>
+          </div>
+              <form onSubmit={handleSignup}>
+                <div className="input-group">
+                  {/* <label htmlFor="username">Username</label> */}
+                  <input
+                    type="text"
+                    id="username"
+                     placeholder='Username'
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
+                    required
+                  />
+                </div>
+                <div className="input-group">
+                  {/* <label htmlFor="password">Password</label> */}
+                  <input
+                    type="password"
+                    id="password"
+                    placeholder='Password'
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    required
+                  />
+                </div>
+                <div className="input-group">
+                  {/* <label htmlFor="confirmPassword">Confirm Password</label> */}
+                  <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder='Confirm Password'
+                    value={confirmPassword}
+                    onChange={(e) => setConfirmPassword(e.target.value)}
+                    required
+                  />
+                </div>
+                <button type="submit" className='submit'>Sign Up</button>
+              </form>
+            </>
+          )}
+        </div>
+        <div className="image-container">
+          <img src={loginPic} alt="Description" />
+        </div>
       </div>
     </div>
   );

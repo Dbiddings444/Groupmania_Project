@@ -13,23 +13,19 @@ const HomePage = () => {
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">User Profile</a></li>
+            <li><a href="#contact">+ new post</a></li>
           </ul>
         </nav>
         </div>
       </header>
       <main className="homepage-main">
         <section className="intro">
-          <h2>Introduction</h2>
-          <p>This is the homepage of my first React app. I'm excited to share it with you!</p>
+          <h2>Featured Post</h2>
+          
         </section>
         <section className="features">
-          <h2>Features</h2>
-          <ul>
-            <li>Easy to use</li>
-            <li>Responsive design</li>
-            <li>Fast and efficient</li>
-          </ul>
+          <h2>Recent Post </h2>
         </section>
       </main>
       <footer className="homepage-footer">
