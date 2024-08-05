@@ -2,19 +2,19 @@
 
 import React from 'react';
 import './HomePage.css'; // Import the CSS file for styling
-import headerLogo from '../assets/icon-left-font-monochrome-white.png'
+import headerLogo from '../assets/icon-left-font-monochrome-white.svg'
+import { Link } from 'react-router-dom';
+import PostCard from '../components/PostCard'
 const HomePage = () => {
   return (
     <div className="homepage">
       <header className="homepage-header">
         <div className="nav">
-        <img src={headerLogo} width="150" height="150"alt='nav logo'></img>
+        <Link to="/Home"> <img src={headerLogo}  className='navLogo' width="150" height="150"alt='nav logo'></img></Link>
         <nav>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
+          <li> <Link to="/new-post">New Post</Link></li>
             <li><a href="#contact">User Profile</a></li>
-            <li><a href="#contact">+ new post</a></li>
           </ul>
         </nav>
         </div>
@@ -22,10 +22,14 @@ const HomePage = () => {
       <main className="homepage-main">
         <section className="intro">
           <h2>Featured Post</h2>
-          
+          <div className='card-container'>
+          <PostCard/>
+          {/* <PostCard/> */}
+          </div>
         </section>
         <section className="features">
-          <h2>Recent Post </h2>
+          
+          <div></div>
         </section>
       </main>
       <footer className="homepage-footer">

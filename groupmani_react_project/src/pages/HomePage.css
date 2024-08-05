@@ -7,7 +7,6 @@
   
   .homepage-header {
     background-color: #282c34;
-    padding: 20px 25px;
     color: white;
   }
   
@@ -27,7 +26,7 @@
   }
   
   .homepage-main {
-    padding: 20px;
+    padding: 20px 250px;
   }
   
   .intro, .features {
@@ -59,4 +58,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.navLogo{
+  height: 70px;
+}
+.card-container{
+display: flex;
+flex-direction: column;
 }

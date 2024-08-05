@@ -2,7 +2,8 @@
 
 import React from 'react';
 import HomePage from './pages/HomePage';
-import LoginPage from './pages/LoginPage'
+import LoginPage from './pages/LoginPage';
+import NewPostPage from './pages/NewPostPage'
 // import Navbar from "./components/Navbar";
 import {
     BrowserRouter as Router,
@@ -15,6 +16,7 @@ function App() {
     <Routes>
       <Route path="/" element={<LoginPage />} />
       <Route path="/home" element={<HomePage />} />
+      <Route path="/new-post" element={<NewPostPage />} />
     </Routes>
     </Router>
   );
