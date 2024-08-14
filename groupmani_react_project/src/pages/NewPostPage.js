@@ -9,10 +9,10 @@ const NewPostPage = () => {
     <div className="new-post-page">
     <header className="homepage-header">
         <div className="nav">
-       <Link to='/Home'> <img src={headerLogo}  className='navLogo' width="150" height="150"alt='nav logo'></img></Link>
+       <Link to='/Home'> <img src={headerLogo}  className='navLogo'alt='nav logo'></img></Link>
         <nav>
           <ul>
-            <li><a href="#contact">User Profile</a></li>
+          <li><Link to="/profile"><div className='profileContainer'><img src="https://via.placeholder.com/800x400" className='profileImg'></img></div></Link></li>
           </ul>
         </nav>
         </div>

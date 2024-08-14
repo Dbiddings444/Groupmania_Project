@@ -61,7 +61,7 @@ const LoginPage = () => {
           </div>
               <form onSubmit={handleLogin}>
                 <div className="input-group">
-                  {/* <label htmlFor="username">Username</label> */}
+                  <label htmlFor="username">Your Username</label>
                   <input
                     type="text"
                     id="username"
@@ -72,7 +72,7 @@ const LoginPage = () => {
                   />
                 </div>
                 <div className="input-group">
-                  {/* <label htmlFor="password">Password</label> */}
+                  <label htmlFor="password">Your Password</label>
                   <input
                     type="password"
                     id="password"
@@ -108,7 +108,7 @@ const LoginPage = () => {
           </div>
               <form onSubmit={handleSignup}>
                 <div className="input-group">
-                  {/* <label htmlFor="username">Username</label> */}
+                  <label htmlFor="username">Your Username</label>
                   <input
                     type="text"
                     id="username"
@@ -119,18 +119,18 @@ const LoginPage = () => {
                   />
                 </div>
                 <div className="input-group">
-                  {/* <label htmlFor="password">Password</label> */}
+                  <label htmlFor="password">Your Password</label>
                   <input
                     type="password"
                     id="password"
-                    placeholder='Password'
+                    placeholder='min 8 characters'
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
                     required
                   />
                 </div>
                 <div className="input-group">
-                  {/* <label htmlFor="confirmPassword">Confirm Password</label> */}
+                  <label htmlFor="confirmPassword">Confirm Your Password</label>
                   <input
                     type="password"
                     id="confirmPassword"

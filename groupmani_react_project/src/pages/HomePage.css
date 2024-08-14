@@ -5,25 +5,6 @@
     font-family: Arial, sans-serif;
   }
   
-  .homepage-header {
-    background-color: #282c34;
-    color: white;
-  }
-  
-  .homepage-header nav ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .homepage-header nav ul li {
-    display: inline;
-    margin: 0 10px;
-  }
-  
-  .homepage-header nav ul li a {
-    color: white;
-    text-decoration: none;
-  }
   
   .homepage-main {
     padding: 20px 250px;
@@ -53,16 +34,7 @@
     width: 100%;
     bottom: 0;
   }
-
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.navLogo{
-  height: 70px;
-}
-.card-container{
-display: flex;
-flex-direction: column;
-}
+  .card-container{
+    display: flex;
+    flex-direction: column;
+    }

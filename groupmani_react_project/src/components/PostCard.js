@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './PostCard.css';
 import'./Normalize.css'
 import techGirl from '../assets/icon.png'
+import { Link } from 'react-router-dom';
 const Card = ({ title, content, imageUrl }) => {
     return (
       // <div className="card">
@@ -11,9 +12,10 @@ const Card = ({ title, content, imageUrl }) => {
       //     <p className="card-text">{content}</p>
       //   </div>
       // </div>
-<div className="card">
+
+<Link className='card' to="/post">
 {/* {imageUrl && <img src={techGirl} alt='Girl Please' className="card-image" />} */}
-<img src={techGirl}></img>
+<img src={techGirl} alt='card image'></img>
 <div className="card-content">
   <div className='top-content'>
   <div className='user'>UserName</div>
@@ -22,10 +24,11 @@ const Card = ({ title, content, imageUrl }) => {
 </div>
 <div className='bottom-content'>
   <div>Likes</div>
-  <div>Content</div>
+  <div>Comments</div>
 </div>
 </div>
-</div>
+</Link>
+
     );
   };
 

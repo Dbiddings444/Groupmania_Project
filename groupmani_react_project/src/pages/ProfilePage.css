@@ -1,0 +1,48 @@
+.infoContainer {
+    padding: 50px 240px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.bio-container {
+    display: flex;
+    flex-direction: column;
+    /* background-color: gray; */
+    width: 100%;
+
+}
+
+.userInfo-container {
+    display: flex;
+    flex-direction: column;
+    /* background-color: gray; */
+    width: 100%;
+    align-items: center;
+}
+
+.story-container {
+    display: flex;
+    flex-direction: column;
+    /* background-color: gray; */
+    width: 100%;
+
+}
+
+.profilePic {
+    background-color: gray;
+    width: 120px;
+    height: 120px;
+    border-radius: 200px;
+    margin-right: 10px;
+}
+
+.deleteButton{
+    width: 25%;
+    background-color: red;
+}
+
+.buttonDiv{
+    display: flex;
+    justify-content: center;
+}

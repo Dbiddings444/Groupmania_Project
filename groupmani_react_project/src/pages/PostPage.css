@@ -1,0 +1,117 @@
+/* src/pages/PostPage.css */
+.post-page {
+  
+  }
+  
+  .post-content {
+    margin-bottom: 40px;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .post-content h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    
+  }
+  
+  .post-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .post-text {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .post-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .post-actions button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .post-actions button:hover {
+    background-color: #0056b3;
+  }
+  
+  .comments-section {
+    margin-top: 40px;
+  }
+  
+  .comments-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .comments-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .comment {
+    margin-bottom: 20px;
+  }
+  
+  .comment-author {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .comment-text {
+    font-size: 1em;
+  }
+  
+  .comment-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .comment-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .comment-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .comment-form button:hover {
+    background-color: #0056b3;
+  }
+  
+.authorDiv{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.profileImg{
+    background-color: gray;
+    width: 50px;
+    border-radius: 200px;
+    margin-right: 10px;
+}
+.authorName{
+    display: flex;
+}

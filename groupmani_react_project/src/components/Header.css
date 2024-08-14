@@ -1,0 +1,47 @@
+.header {
+    background-color: #282c34;
+    color: white;
+  }
+  
+  .header nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .header nav ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  .header nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+  }
+  .nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .navLogo{
+    height: 50px;
+  }
+.profileContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navLogo{
+  width: 180px;
+  height: 70px;
+}
+.nav .profileImg{
+width: 32px;
+height: 32px;
+}

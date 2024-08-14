@@ -77,7 +77,8 @@ h2 {
   padding: 8px;
   border: 1px solid #ddd;
   border-radius: 10px;
-  box-sizing: border-box; /* Ensures padding is included in the width */
+  box-sizing: border-box;
+  /* Ensures padding is included in the width */
   height: 40px;
 }
 
@@ -103,30 +104,49 @@ button[disabled] {
   background-color: #aaa;
 }
 
-form{
-  width:323px;
+form {
+  width: 323px;
 }
 
-#left{
-  border-radius:10px 0 0 10px;
+#left {
+  border-radius: 10px 0 0 10px;
 }
-#right{
-  border-radius:0 10px 10px 0;
+
+#right {
+  border-radius: 0 10px 10px 0;
 }
-.welcomeMessage{
+
+.welcomeMessage {
   margin-top: 10px;
   margin-bottom: 20px;
   color: gray;
   font-size: 13px;
   font-weight: 400;
 }
-h2{
+
+h2 {
   margin-bottom: 0;
 }
-.logo{
+
+.logo {
   width: 200px;
 }
-.submit{
+
+.submit {
   height: 50px;
   font-weight: bold;
+}
+
+@media all and (max-width: 768px) {
+
+  .image-container {
+    display: none;
+  }
+  .tabs {
+width: 100%;
+  }
+
+  form{
+    width: 100%;
+  }
 }
