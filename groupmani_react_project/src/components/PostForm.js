@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './PostForm.css';
-import RichTextEditor from '../components/RichTextEditor';
 
 const PostForm = () => {
   const [postType, setPostType] = useState('gif');
